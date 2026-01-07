@@ -1,0 +1,19 @@
+import automat.Automat;
+
+public class Main{
+    
+    public static void main(String[] args){
+        /*
+         * Ab hier soll die main-Methode, wie auf dem Aufgabenblatt beschrieben, implementiert werden.
+         */
+        String[] names = {"Fanta", "Wasser", "Cola", "Sprite", "Tee"};
+        int[] preise = {300, 100, 300, 300, 200};
+        Automat automat = new Automat(names, preise);
+        automat.printWare();
+        automat.insertCoin(1);
+        automat.insertCoin(7);
+        automat.insertCoin(200);
+        automat.reset();
+        automat.select(4);
+    }
+}
